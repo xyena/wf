@@ -27,10 +27,19 @@
 			<p><b class="abl apassive">Passive:</b> Grants 5 HP/s to allies within 50m (NOT Affinity Range), scaling up to 25 HP/s after 200 health orb pickups.</p>
 			<p>1st Ability, <b class="abl afirst">Fractured Blast:</b> Spend <b class="affeff">25 energy</b> to hit all enemies within a <b class="affran">14 meter</b> cone for <b class="affstr">500 damage</b> of type Impact/Slash, and inflict them with 1 status proc of each. Targets that die under the effect of this skill are <b class="affstr">50 percent</b> more likely to drop Health Orbs and <b class="affstr">20 percent</b> more likely to drop Energy Orbs.</p>
 			<p>2nd Ability, <b class="abl asecond">Preserving Shell:</b> Spend <b class="affeff">50 energy</b> to provide <b class="affstr">40 percent</b> Damage Reduction to all allies in Affinity Range for <b class="affdur">25 seconds</b>. Damage Reduction increases up to 90%, adding <b class="affstr">3 percent</b> for kills and <b class="affstr">1 percent</b> for assists. After 1 second, the buff decays at 3%/s while between 90%&ndash;75%, and at 1%/s while between 75%&ndash;25%.</p>
-			<p>3rd Ability, <b class="abl athird">Prismatic Gem:</b> Spend <b class="affeff">75 energy</b> to place a gem in front of Citrine that targets enemies within <b class="affran">15 meters</b>, applying 1 of the 4 basic Elemental status afflictions to enemies receiving weapon damage via Citrine or her allies.</p>
+			<p>3rd Ability, <b class="abl athird">Prismatic Gem:</b> Spend <b class="affeff">75 energy</b> to place a gem in front of Citrine that targets enemies within <b class="affran">15 meters</b>, <b class="affstr">1000 damage</b> of <b>EACH</b> basic Elemental damage type, and all 4 respective status afflictions to enemies receiving weapon damage via Citrine or her allies. Enemies are affected outside the gem if the attacking player is inside the gem's radius, and enemies inside the gem's radius can be affected even if the attacking player is outside the gem's radius.</p>
+			
+			<h2>Caps and Thresholds</h2>
+			<p>The following are <em>informational</em>, and not necessarily requirements.</p>
+			<ul>
+				<li>A <b>threshold</b> of <b class="affstr">200%</b> Strength will result in a 100% chance to spawn Health Orbs with Fractured Blast. Going beyond 200% has a chance to produce an additional. One Blind Rage would nearly guarantee this effect; however, with Overextended, an additional 61% Strength would be needed to hit this threshold. Options would involve dropping Overextended and simply using Stretch and settling for a minimum of 145% Range, or simply devoting more mod space to Strength.</li>
+				<li>A <b>cap</b> of <b class="affstr">225%</b> Strength will start Preserving Shell's Damage Reduction at 90% immediately.</li>
+				<li>A <b>threshold</b> of <b class="affstr">100%</b> Strength is needed to yield 100% Status Chance on Prismatic Gem.</li>
+			</ul>
 			
 			<h2>Quick Rundown</h2>
 			<p>Play Citrine in missions with high enemy density, where enemies and allies are in groups, the mission has stationary objectives, or has enemies that must be prioritized and focused down (Survival, Mobile Defense, Defense, Excavation, Disruption, Assassination). If there are burst DPS and sustained DPS classifications, then Citrine's abilities reward sustained Support. Long lulls between enemies or scattered enemy populations reduce her kit's effectiveness no matter the build.</p>
+			<p>Because Citrine deals all 4 elemental damage types and their statuses guaranteeably under her 3rd ability, </p>
 			
 			<div class="buildbar">
 				<button class="buildbutton" onclick="showBuild('Support')">Support</button>
@@ -38,55 +47,60 @@
 				<button class="buildbutton" onclick="showBuild('3rd')">?</button>
 			</div>
 			
-			<div>
+			<div class="build">
 				<p>A passive that grants up to 25 HP/s, is not tremendously useful on its own. A Wisp with 100% ability strength grants 30 HP/s with Vitality Mote. Citrine must focus on other ways to provide support beyond health regen in a world where Wisps and Dreamer's Bond have become so prevalent. However, this passive does mean Citrine can gain her first 200 health orbs per mission without needing to take health damage (after this point, some health damage will be required). Arcane Blessing (below) requires 50 health orbs to become maxed, so this is well within a safe range.</p>
 				
-				<p>Arcane Blessing is a must. Since Citrine's 1st ability produces health orbs, this Arcane will pop off at a bonus 1200 health very quickly. If we assume 100% Strength, then 50 orbs spawning 50% of the time = 100 kills/assists until this Arcane is maxed. This saves a mod slot that would otherwise go to Vitality, Primed Vigor, etc. (This does NOT work with Equillibrium when you pick up Energy orbs.)</p>
+				<p>Arcane Blessing will greatly improve maximum Health. Since Citrine's 1st ability produces health orbs, this Arcane will pop off at a bonus 1200 health very quickly. If we assume 100% Strength, then 50 orbs spawning 50% of the time = 100 kills/assists until this Arcane is maxed. This saves a mod slot that would otherwise go to modding Health. (This does NOT work with Equillibrium when you pick up Energy orbs.)</p>
 				
 				<p>Preserving Shell should be up at all times. This is your main source of survivability.</p>
 				<p>Strength matters. A level 120 Survival is possible even solo at 40% strength, but you will be fighting to get every inch of Damage Reduction you can get. And although you can sit at 90% DR with 40% Strength (1%/kill, 0%/assist)&mdash;one instance of forgetting to recast the ability before it expires, one Nullifier, one Scrambus, one Comba, one Stalker spawn, one Violence spawn, one knockback off the edge of the map&mdash;means you must restart at the minimum 25% DR and work your way back up.</p>
 				<p>The ability's effect is controlled by Affinity Range, and does not scale at all to ability range. If not for the strong demand of her 1st and 3rd abilities, Narrow Minded would otherwise be a free insert here. Since the skill can be recast while active (and it will keep your current bonuses), Duration is not required but is a forgiving measure if you are not good at keeping an eye on your buff timers. The meager 40% damage reduction at default may seem as though this ability needs more Strength to be useful, but it doesn't. As long as you get kills and you are at least being tagged for assists (bonus is halved for assists), you'll be able to hit the 90% DR cap fairly consistently. Somewhere between 65&ndash;70% strength, assists round down to a +0% bonus. It is not recommended to go below 70% strength for this reason; however, this needs more testing, as this could simply be rounding below 0.5% and only be visual.</p>
 				
-				<p>Prismatic Gem is, arguably, her most important ability. Aside from slapping enemies in range with 1 of 4 random elemental status effects, this tags any enemy in range that takes weapon damage from an allied Tenno as an Assist for your Preserving Shell. Additionally, any enemy hit with Fractured Blast takes all 4 status effects, 1 time per cast. The weapon damage version only goes off once every 0.4 seconds, which is less than ideal, but still good for automatic trigger weapons to take advantage of. Mind your Ability Range stat&mdash;if you are not encompassing enough enemies, you will not be tagging enough enemies for those Assist kills.</p>
+				<p>Prismatic Gem is, arguably, her most important ability. Aside from slapping enemies in range with all 4 basic elemental status effects, this tags any enemy in range that takes weapon damage from an allied Tenno as an Assist for your Preserving Shell. Additionally, any enemy hit with Fractured Blast takes all 4 status effects, 1 time per cast. The weapon damage version only goes off once every 0.4 seconds, which is less than ideal, but still good for automatic trigger weapons to take advantage of. Mind your Ability Range stat&mdash;if you are not encompassing enough enemies, you will not be tagging enough enemies for those Assist kills.</p>
 				
 				<p>With regards to Crystallize, Strength is a dump stat. The only thing that Strength affects here is the Impact damage the initial cast creates, which is only 500 by default. Crystals receiving damage will always give a flat 300% critical chance regardless. In other words, Precision Intensify is useless on this frame (not including Helminth). Citrine's Recrystalize augment spreads Crystallize's effect within 16m, scaling with Range. This is similiar Resonance (Banshee Sonar) in almost every way: where Resonance only triggers a new Sonar for 100% of the remaining duration, the duration of Crystallize completely refreshes when one enemy is killed in their weak point; hence the name. It does not have anywhere near Sonar's 35m base range, but one good Crystallize cast in an ideal situation could last the entirety of one Survival mission / Sanctuary Onslaught wave. If an explosion kills the enemy, then the crystal will count as "hit" and it will spread. However, a shattered crystal may not result in the target dying in high enough level content, and Recrystalize would not trigger under these circumstances. It also will not spread if the enemy dies under the effect of ability damage, such as Spore or Miasma. This skill pairs well with weapons like the Nukor, which have a very high Critical Damage stat but lower than average Critical Chance.</p>
+				
 				<h2>Archon Shards</h2>
+				<p>Adding a Tauforged Azure shard for +225 Armor increases the Armor stat from 265 to 490, an 84% increase. Since Steel Fiber increases armor by 100%, this could be considered </p>
 				<h2>Team Options</h2>
 				<p>Playing Citrine solo gives more credence to the possibility of running Narrow Minded, as you will have much more control over what damage your targets are taking. Additionally, you will be able to make certain that every kill in the mission counts as your kill and not an assist, thereby ensuring you receive the maximum increment of Damage Reduction that Preserving Shell offers.</p>
 				
-				<p>Citrine does not perform well in low-level missions. However, as with most support frames, if the mission is low-level enough that enemies are not being wiped every time they appear, then you're at the least not hindering anything. She generally does not pair well with allies doing mass ability damage, like Saryn, Equinox, Dante, etc., but the former two frames desperately need the survivability that Preserving Shell can grant. In higher level missions (125+), she can still support these frames. Damage Reduction sees less play nowadays than it used to, during Trinity's golden days circa 2017, as Adaptation's resistances granted by a single mod slot and 12 capacity is a lot less investment than one entire frame in the party out of four or less&mdash;but Adaptation does not protect against sudden burst damage like Blast, Toxin, and Tau damage that you really don't want to be on the receiving end of without that 90% already built up. Preserving Shell helps mitigate those terrifying first hits, for you and your party.</p>
+				<p>Citrine's abilities do not work well with each other in low-level missions, where targets are killed before statuses can be applied and allies move along smoothly without need for support. However, as with most support frames, if the mission is low-level enough that enemies are not being wiped every time they appear, then you're at the least not hindering anything. She generally does not pair well with allies doing mass ability damage, like Saryn, Equinox, Dante, etc., but the former two frames desperately need the survivability that Preserving Shell can grant. In higher level missions (125+), she can still support these frames. Damage Reduction sees less play nowadays than it used to, during Trinity's golden days circa 2017, as Adaptation's resistances granted by a single mod slot and 12 capacity is a lot less investment than one entire frame in the party out of four or less&mdash;but Adaptation does not protect against sudden burst damage like Blast, Toxin, and Tau damage that you really don't want to be on the receiving end of without that 90% already built up. Preserving Shell helps mitigate those terrifying first hits, for you and your party.</p>
 				<h2>Other Options</h2>
 			</div>
-			<ul>
-				<li>A Strength value over 200% will guarantee spawning of Health Orbs with Fractured Blast. Going beyond this has a chance to produce an additional. One Blind Rage would nearly guarantee this effect; however, with Overextended, an additional 61% Strength would be needed to hit this threshold. Options would involve dropping Overextended and simply using Stretch and settling for a minimum of 145% Range, or simply devoting more mod space to Strength.</li>
-			</ul>
+			
 			<h2>Final Conclusions</h2>
 			<p>In order of importance:</p>
 			<ul class="importance">
-				<li>Range (Fractured Blast range (14m), Prismatic Gem radius (15m), Recrystalize spread range (16m))</li>
 				<li>Strength (Health Orb spawn chance (50%), Energy Orb spawn chance (20%), DR per kill (3%)/assist (1%), Prismatic Gem Damage (1000) and bonus Status Chance (100%))</li>
+				<li>Range (Fractured Blast range (14m), Prismatic Gem radius (15m), Recrystalize spread range (16m))</li>
 				<li>Duration (Preserving Shell duration (25s), Prismatic Gem duration (30s), Prismatic Gem bonus Status Duration (100%))</li>
 				<li>Efficiency (25, 50, 75, 100; Energy Orbs have increased drop chance from Fractured Blast)</li>
 			</ul>
 			<p>It would take 400% Strength to guarantee 2 Health Orbs/kill, and 500% Strength to guarantee 1 Energy Orb/kill. Neither of these are feasible without serious mod investment, Molt Augmented and any combination of Parasitic Link, Provoke, Power of the Seven, or Empower.</p>
-			<h2>Other Recommendations</h2>
-			<ul>Warframe Mods and Arcanes
-				<li></li>
+			<h2>Recommended Alternatives</h2>
+			<p>Warframe Mods and Arcanes</p>
+			<ul>
+				<li>Corrosive Projection: This is a great leveling aura when a Forma to the aura slot is not desirable.<li>
+				<li>Growing Power: Though this needs to be initiated with weapon damage status, standing inside a 100% Strength Prismatic Gem will grant 100% increased Status Chance with weapons, and should assist any type of weapon equipped regardless of its affinity for status. This will require a Forma to the aura slot.</li>
 			</ul>
-			<ul>Weapon Related
+			<p>Weapon Related</p>
+			<ul>
 				<li>Azima: Able to shoot enemies and proc Prismatic Gem's effects in turret mode. Untested: Critical Chance with turret mode before, during, and after expiration of Secondary Kinship.</li>
 				<li>Secondary Kinship: Citrine's passive health regen aura, Guardian Shell, and Prismatic Gem's aura all count as buffs. This arcane considers yourself as an ally being buffed, so when buffing 3 other squadmates, you receive 20% * 3 buffs * 4 teammates = +240% Critical Chance on your Secondary weapon. Keep in mind that Crystallize already provides +300% Critical Chance. Another option of infusing an ability over Crystallize that buffs allied frames would increase this arcane's effect to 320% Critical Chance and remove the overlap with Crystallize's innate Critical Chance buff.</li>
 			</ul>
 			<h2>Not recommended</h2>
-			<ul>Warframe Mods and Arcanes
+			<p>Warframe Mods and Arcanes</p>
+			<ul>
 				<li>Archon Intensify: Cannot be procced by any of her base skills. <a href="#">Infused Abilities that proc Archon Intensify</a></li>
 				<li>Molt Augmented: This requires Citrine to actually get the kill, not just assist. While this sounds nice for buffing her 1's orb drop chances, 250 enemies slain by Citrine's hand is a tall order for a support.</li>
 				<li>Molt Efficiency: Citrine has 370 shields that, while affected by Damage Reduction, take away from mod space that could be used for Health. The need to mod Duration does not outweigh the need for Health.</li>
 				<li>Power Donation: Citrine does not enjoy the company of her teammates enough to sacrifice 30% Strength on 3 out of her 4 abilities.
 				<li>Precision Intensify: Only increases 500 Impact damage. An infused 4th ability may behave differently, but this removes the ability to run regular Intensify on her other 3 abilities which greatly require Strength.</li>
 			</ul>
-			<ul>Weapon Related
-				<li>The Ogris's Nightwatch Napalm (Ogris): does NOT trigger the Weapon Damage that causes Prismatic Gem to activate.</li>
+			<p>Weapon Related</p>
+			<ul>
+				<li>Nightwatch Napalm (Ogris): Does NOT trigger the Weapon Damage that causes Prismatic Gem to activate.</li>
 			</ul>
 		</main>
 		
