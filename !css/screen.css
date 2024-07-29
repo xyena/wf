@@ -14,23 +14,39 @@ a {
 }
 .apassive{}.afirst{}.asecond{}.athird{}.afourth{}
 
+.abl {
+	text-decoration: underline;
+}
+.affdur {
+	color: #55ff55;
+}
+.affeff {
+	color: #5599ff;
+}
+.affran {
+	color: #ffff55;
+}
+.affstr {
+	color: #ff5555;
+}
+
 ul {
-	margin: 0 0 0 2em;
+	
 }
 li {
 	list-style: disc;
-	padding-bottom: .5em;
+	margin: 0 0 .5em 2em;
 }
 
-
-
-
-
-
-
-
-
-
+button.buildbutton {
+	border: .0125em solid white;
+	padding: .125em .25em;
+	background-color: inherit;
+	color: inherit;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-bottom: .75em;
+}
 
 
 
@@ -47,7 +63,7 @@ li {
 html {
 	font-family: Arial;
 	background-color: #222;
-	color: #fff;
+	color: #ddddd0;
 }
 nav {
 	margin: auto;
@@ -60,24 +76,29 @@ nav ul {
 }
 nav li {
 	border-bottom: .125em solid #0099ff;
-	padding: 0 1em 0 1em;
+	padding: 0 1em 0 1em; /*yes, padding, not margin*/
+	color: #fff;
 }
 main {
-	padding: 0 1em 0 1em;
+	 margin: 0 1em 0 1em;
 }
 p {
-	margin-bottom: .5em;
+	margin-bottom: 1em;
+	line-height: 1.25em;
 }
 h1 {
-	margin-bottom: .5em;
 	font-size: 2em;
 	font-weight: bold;
+	margin-bottom: .5em;
 }
 h2 {
-	margin-bottom: .25em;
+	margin-top: 1.5em;
+	margin-bottom: .5em;
 	font-size: 1.5em;
 	font-weight: bold;
 }
+
+
 footer {
 	margin-top: 1em;
 	padding: 1em;
