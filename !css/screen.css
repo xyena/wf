@@ -30,16 +30,21 @@ a {
 	color: #ff5555;
 }
 
+div.buildbar {
+	margin-bottom: 1em;
+}
 button.buildbutton {
-	border: .0125em solid white;
+	border: .125em outset #eeeee0;
 	padding: .125em .25em;
 	background-color: inherit;
 	color: inherit;
 	font-weight: bold;
 	font-size: 1.5em;
-	margin-bottom: .75em;
 }
-
+div.build {
+	border: .125em inset #eeeee0;
+	padding: 1em 1em 0 1em;
+}
 
 
 
